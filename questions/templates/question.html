@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}שאלות{% endblock %}
+
+{% block content %}
+
+<h1 class="question">{{ item.question }}</h1>
+
+{% if item.image != None %}
+<img class="question-img" src="{{ item.image }}">
+{% endif %}
+
+{% for answer in item.answers %}
+<button {% if answer == item.correct_answer %} id="correct" {% endif %} class="answer">{{ answer }}</button>
+{% endfor %}
+
+<a href="./question" class="next">הבא</a>
+
+{% endblock %}

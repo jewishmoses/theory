@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #845EC2;
+    color: #fff;
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.question {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* use 50vw on large screens and 100% for small screens */
+
+.btn {
+    text-decoration: none;
+    width: 50vw;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #B39CD0;
+}
+
+.btn-disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.answer {
+    width: 80%;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background: #B39CD0;
+    /* transition: background-color 2s ease-out; */
+}
+
+.question-img {
+    border: red 3px solid;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.next {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+/* @media (max-width: 768px) {
+    .question {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .answer {
+        font-size: 1rem;
+    }
+    .question-img {
+        margin-bottom: 30px;
+    }
+} */
+
+@media (max-width: 992px) {
+    .question {
+        font-size: 4rem;
+        padding: 15px;
+    }
+    .title {
+        font-size: 4rem;
+        padding: 15px;
+    }
+    .answer {
+        padding: 20px;
+        width: 100%;
+        font-size: 3rem;
+    }
+    .btn {
+        padding: 20px;
+        width: 100%;
+        font-size: 3rem;
+    }
+    .question-img {
+        width: 100%;
+        height: auto;
+    }
+    .next {
+        font-size: 4rem;
+    }
+    .home img {
+        width: 180px;
+        height: auto;
+    }
+    .credits {
+        margin-top: 60px !important;
+        font-size: 2rem !important;
+    }
+}
+
+.wrong {
+    background-color: #FF0000;
+}
+
+.right {
+    background-color: #A1D92A;
+}
+
+.home {
+    display: block;
+}
+
+.credits {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    display: block;
+    text-align: center;
+}
